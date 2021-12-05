@@ -10,4 +10,18 @@ import org.junit.runner.RunWith;
         glue = "AddToCartSteps",
         dryRun = false)
 public class BandQ {
+  /*  git branch -M main
+    git remote add origin https://github.com/falguni001/javaPractice.git
+    git push -u origin main
+    git config --global user.email "lightyear9461@gmail.com"
+    git config --global user.name "Avadh@2009"
+     git remote add origin https://github.com/DevPatel12345/JavaSeleniumBddPractice.git*/
+    /*
+    git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/DevPatel12345/JavaSeleniumBddPractice.git
+git push -u origin main
+     */
 }
