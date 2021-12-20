@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
         features="onemore",
         glue="UpdateNop",
 
-        dryRun=true,
+        dryRun=false,
         monochrome=true
 
 
