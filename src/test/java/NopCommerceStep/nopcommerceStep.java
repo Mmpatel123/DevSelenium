@@ -59,7 +59,8 @@ public class nopcommerceStep {
         Assert.assertEquals(true,capText.contains("lightyear9461"));
     }
 
-    }
+
+}
 
 
 
