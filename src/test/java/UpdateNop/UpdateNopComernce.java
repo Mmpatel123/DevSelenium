@@ -27,46 +27,54 @@ public class UpdateNopComernce {
         driver.get(url);
     }
 
-    @And("^Click on My Account Menus$")
-    public void click_on_My_Account_Menus() throws Throwable {
+@And("^Click on register$")
+public void Accept_all_cookies() throws Throwable {
+    driver.findElement(By.xpath("/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a")).click();
 
-        driver.findElement(By.linkText("My Account")).click();
-    }
 
+
+}
 
 
     //login with data table method using header - Map
     @When("^Enter registered username and passwords$")
     public void enter_registered_username_and_passwords(DataTable credentials) throws Throwable {
         List<Map<String,String>> data=credentials.asMaps(String.class,String.class);
-        driver.findElement(By.id("username")).sendKeys(data.get(0).get("user"));
-        driver.findElement(By.id("password")).sendKeys(data.get(0).get("password"));
+        driver.findElement(By.id("Email")).sendKeys(data.get(0).get("user"));
+        driver.findElement(By.id("Password")).sendKeys(data.get(0).get("password"));
+
     }
 
     @And("^Click on login buttons$")
     public void click_on_login_buttons() throws Throwable {
-        driver.findElement(By.name("login")).click();
+        driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button")).click();
+
     }
 
     @Then("^User must successfully login to the web pages$")
     public void user_must_successfully_login_to_the_web_pages() throws Throwable {
-        String capText = driver.findElement(By.xpath("//*[@id='page-36']/div/div[1]/div/p[1]/strong")).getText();
-        Assert.assertEquals(true, capText.contains("lightyear9461"));
-        driver.close();
-    }
-
-    @Then("^Very login$")
-    public void very_login() throws Throwable {
-        String capText=driver.findElement(By.xpath("//*[@id='page-36']/div/div[1]/ul/li/strong")).getText();
-        if(capText.contains("ERROR")) // Test for invalid inputs
-        {
-            Assert.assertTrue("Invalid input - Error Page", true);
-
-        }
-        else
-        {
-            Assert.assertTrue(false);
-        }
+   driver.getTitle();
 
     }
+
+
+@And("^I will click on electronics website$")
+    public void i_cell_click_on_my_browser(){
+        driver.findElement(By.linkText("Electronics")).click();
+
 }
+
+@And("^will click on cell billing_phone$")
+    public void i_cell_click_on_my_phone() throws Throwable {
+        driver.findElement(By.linkText("Cell phones")).click();
+        driver.findElement(By.linkText("HTC One Mini Blue")).click();
+}
+    @Then("^I will pick a choice of my desired phone$")
+    public void i_will_pick_a_choice_of_my_desired_phone() {
+        // Write code here that turns the phrase above into concrete actions
+        //driver.findElement(B)
+        driver.findElement(By.id("add-to-cart-button-19")).click();
+        throw new io.cucumber.java.PendingException();
+    }
+    }
+

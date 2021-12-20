@@ -6,8 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "Letsgo",
-        glue = "AddToCartSteps",
+        features = "C:\\Users\\ADMIN\\IdeaProjects\\pls\\Features\\Guru99.feature",
+        glue = "NopCommerceStep",
         dryRun = false)
 public class BandQ {
   /*  git branch -M main

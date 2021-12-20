@@ -23,7 +23,8 @@ public class nopcommerceStep {
 
     @Given("^Open the browser$")
     public void open_the_browser() throws Throwable {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\ADMIN\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
+       // System.setProperty("webdriver.chrome.driver", "C:\\Users\\ADMIN\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\ADMIN\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
