@@ -49,11 +49,22 @@ Feature: MyAccount-Login Feature
    #Simple login with Data table params with header
   Scenario: Log-in with valid username and password
     Given Open the browsers
-    When Enter the URLS "http://practice.automationtesting.in/"
-    And Click on My Account Menus
+    When Enter the URLS "https://demo.nopcommerce.com/"
+    And Click on register
+
     And Enter registered username and passwords
-      |	user	|	password	|
-      | lightyear9461| Avadh@20090 |
+      | user                     | password |
+      | lightyear9461@gmail.com | M630ela1 |
 
     And Click on login buttons
-    Then User must successfully login to the web pages
+    And User must successfully login to the web pages
+    And I will click on electronics website
+    And will click on cell billing_phone
+    Then I will pick a choice of my desired phone
+
+     #   And now i will select my country
+    And  I will do shiping methods
+    And now i will select my payment method cash or card
+    And I click on continue button
+    And then I will see payment information
+    And  now i will confirm my i Order is place susscefuully
