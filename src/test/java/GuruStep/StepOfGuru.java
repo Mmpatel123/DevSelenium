@@ -26,7 +26,7 @@ public class StepOfGuru {
     @When("^I enter the URLSSSS \"([^\"]*)\"$")
     public void i_enter_the_ulr(String GuruUrl) {
         // Write code here that turns the phrase above into concrete actions
-    driver.get("http://demo.guru99.com/test/login.html");
+    driver.get(GuruUrl);
         throw new io.cucumber.java.PendingException();
     }
 
