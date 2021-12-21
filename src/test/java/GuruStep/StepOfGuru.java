@@ -43,7 +43,7 @@ public class StepOfGuru {
     public void user_must_successfully_login_to_the_web_server() {
         driver.findElement(By.name("SubmitLogin")).click();
 String CaptureText = driver.findElement(By.xpath("/html/body/div[4]/div/div/h3")).getText();
-        Assert.assertEquals(true,CaptureText.contains("Successfully Logged in..."));
+        Assert.assertEquals(true,CaptureText.contains("Your order has been successfully processed!"));
         throw new io.cucumber.java.PendingException();
     }
 

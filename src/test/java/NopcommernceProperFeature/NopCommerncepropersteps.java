@@ -5,6 +5,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -139,8 +140,11 @@ public class NopCommerncepropersteps {
         Thread.sleep(1000L);
         driver.findElement(By.xpath("//*[@id=\"confirm-order-buttons-container\"]/button")).click();
         System.out.println(driver.getTitle());}
-    @Then("^i will close the window$")
+    @Then("^close browser$")
     public void nowIsWillConfirmMyIOrderIsPlaceSusscefuully() throws InterruptedException {
+Thread.sleep(2000L);
+   //     String CaptureTextS = driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/div/div[1]/strong")).getText();
+        //Assert.assertEquals(true,CaptureTextS.contains("Order"));;}
         driver.close();}
     }
 
