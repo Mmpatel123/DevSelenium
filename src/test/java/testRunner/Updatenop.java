@@ -5,8 +5,8 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features="onemore",
-        glue="UpdateNop",
+        features="ConfirmingCheckoutFeature",
+        glue= "UpdateNopCommernce",
 
         dryRun=false,
         monochrome=true
