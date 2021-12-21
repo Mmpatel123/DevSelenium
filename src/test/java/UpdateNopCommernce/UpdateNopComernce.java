@@ -1,21 +1,17 @@
-package UpdateNop;
+package UpdateNopCommernce;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 import io.cucumber.java.en.Given;
-import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.Wait;
 
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 
 public class UpdateNopComernce {
@@ -135,7 +131,7 @@ Thread.sleep(1000L);
 
     @And("^then I will see payment information$")
     public void then_I_Will_See_Payment_Information() {
-    // driver.findElement(By.xpath("//*[@id=\"checkout-confirm-order-load\"]/div/div/div/div/div[1]/div[1]/div/strong")).click();
+        //    // driver.findElement(By.xpath("//*[@id=\"checkout-confirm-order-load\"]/div/div/div/div/div[1]/div[1]/div/strong")).click();
     }
     @And("^now i will confirm my i Order is place susscefuully$")
     public void nowIWillConfirmMyIOrderIsPlaceSusscefuully() throws InterruptedException {
