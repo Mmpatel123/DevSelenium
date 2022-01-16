@@ -44,6 +44,7 @@ public void Accept_all_cookies() throws Throwable {
         driver.findElement(By.id("Email")).sendKeys(data.get(0).get("user"));
         Thread.sleep(1000L);
         driver.findElement(By.id("Password")).sendKeys(data.get(0).get("password"));
+
     }
 
     @And("^Click on login buttons$")
@@ -54,7 +55,7 @@ public void Accept_all_cookies() throws Throwable {
     }
 
     @Then("^User must successfully login to the web pages$")
-    public void user_must_successfully_login_to_the_web_pages() throws Throwable {
+    public void user_must_successfully_login_to_the_web_pages() {
    driver.getTitle();
 
     }

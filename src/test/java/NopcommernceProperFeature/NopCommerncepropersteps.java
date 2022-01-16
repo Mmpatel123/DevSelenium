@@ -125,6 +125,7 @@ public class NopCommerncepropersteps {
         Thread.sleep(1000L);}
     @And("^user will select the payment method$")
     public void now_i_will_select_my_payment_method() {
+        driver.findElement(By.xpath("//*[@id=\"paymentmethod_1\"]")).click();
         driver.findElement(By.xpath("//*[@id=\"payment-method-buttons-container\"]/button")).click();
 
     }
@@ -132,6 +133,7 @@ public class NopCommerncepropersteps {
     public void then_I_Will_See_Payment_Information() throws InterruptedException {
         //    // driver.findElement(By.xpath("//*[@id=\"checkout-confirm-order-load\"]/div/div/div/div/div[1]/div[1]/div/strong")).click();
         Thread.sleep(1000L);
+        ;
         driver.findElement(By.xpath("//*[@id=\"payment-info-buttons-container\"]/button")).click();
     }
 
